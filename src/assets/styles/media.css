@@ -15,8 +15,19 @@
   #header {
     padding: 20px;
   }
+  .name{
+    font-size: 2.5rem;
+  }
+  .animations{
+    font-size: 30px;
+  }
   #section {
     padding-top: 100px;
+    height: auto;
+    background-size: cover;
+  }
+  .contact-info{
+    flex-direction:column;
   }
   .profile-section {
     flex-direction: column;

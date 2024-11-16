@@ -15,13 +15,13 @@ export default function Section() {
     const interval = setInterval(() => {
       setCurrentText((prevText) => (prevText + 1) % texts.length);
       setAnimationClass("fade-in");
-    }, 3000);
+    }, 1500);
 
     return () => clearInterval(interval);
   }, [texts.length]);
 
   useEffect(() => {
-    const timeout = setTimeout(() => setAnimationClass(""), 1000);
+    const timeout = setTimeout(() => setAnimationClass(""),1000);
     return () => clearTimeout(timeout);
   }, [currentText]);
 

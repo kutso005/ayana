@@ -26,7 +26,8 @@ const Skills = () => {
   }, []);
 
   return (
-    <section className="skills-section">
+  <div className="container">
+      <section className="skills-section">
       <h1 className="title">My Skills</h1>
       <div className="ckils">
         <div className="detail">
@@ -60,6 +61,7 @@ const Skills = () => {
         </div>
       </div>
     </section>
+  </div>
   );
 };
 

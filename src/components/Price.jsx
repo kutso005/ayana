@@ -18,6 +18,10 @@ export default function Price() {
                     <span className='client'> <CountUp end={25} duration={5} />+  </span>
                     <p>Сотрудников</p>
                 </div>
+                <div >
+                    <span className='client'> <CountUp end={25} duration={5} />+  </span>
+                    <p>Сотрудников</p>
+                </div>
             </div>
         </div>
     </div>

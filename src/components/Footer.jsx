@@ -43,28 +43,41 @@ export default function Footer() {
           <h2>Let's Connect</h2>
           <ul className="social-links">
             <li>
-              <a href="#">
-                <FaFacebook size={20} /> Facebook
+              <a href="#" >
+                <div className="width">  <FaFacebook size={20}  /></div>
+               Facebook
+              </a>
+            </li>
+            <li>
+              <a href="#" >
+               <div className="width">  <FaTwitter size={20} /></div> Twitter
               </a>
             </li>
             <li>
               <a href="#">
-                <FaTwitter size={20} /> Twitter
+                <div className="width">
+                  
+                  <FaInstagram size={20} />
+                </div>{" "}
+                Instagram
               </a>
             </li>
             <li>
               <a href="#">
-                <FaInstagram size={20} /> Instagram
+                <div className="width">
+                  {" "}
+                  <FaPinterest size={20} />{" "}
+                </div>{" "}
+                Pinterest
               </a>
             </li>
             <li>
               <a href="#">
-                <FaPinterest size={20} /> Pinterest
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <FaSkype size={20} /> Skype
+                <div className="width">
+                  {" "}
+                  <FaSkype size={20} />
+                </div>{" "}
+                Skype
               </a>
             </li>
           </ul>

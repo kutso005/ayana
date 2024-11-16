@@ -9,6 +9,7 @@ import Price from "./components/Price";
 import Section from "./components/Section";
 import Services from "./components/Services";
 import Skills from "./components/Skils";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
@@ -75,6 +76,9 @@ function App() {
       </div>
       <div id="clients" ref={sectionRefs.clients}>
         <Price />
+      </div>
+      <div id="contact" ref={sectionRefs.contact}>
+        <Testimonials/>
       </div>
       <div id="contact" ref={sectionRefs.contact}>
         <Footer />
