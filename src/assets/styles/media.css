@@ -29,6 +29,9 @@
   .contact-info{
     flex-direction:column;
   }
+  .Together{
+    font-size: 20px;
+  }
   .profile-section {
     flex-direction: column;
     width: 100%;

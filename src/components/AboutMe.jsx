@@ -65,6 +65,11 @@ export default function AboutMe() {
       </div>
       <div className="Together">
         <h3>Let’s Work Together On Your Next Project!</h3>
+        <div
+            className="speech-bubble reds" 
+          >
+            <p>Hire Me Now!</p>
+          </div>
       </div>
     </div>
   );

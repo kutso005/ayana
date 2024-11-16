@@ -35,6 +35,9 @@ export default function Header({ scrollToSection, activeSection }) {
           <p className={getActiveClass("portfolio")} onClick={() => scrollToSection("portfolio")}>
             Portfolio
           </p>
+          <p className={getActiveClass("client")} onClick={() => scrollToSection("client")}>
+          Clients
+          </p>
           <p className={getActiveClass("contact")} onClick={() => scrollToSection("contact")}>
             Contact
           </p>

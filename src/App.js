@@ -20,7 +20,7 @@ function App() {
     about: useRef(null),
     skills: useRef(null),
     portfolio: useRef(null),
-    clients: useRef(null),
+    client: useRef(null),
     contact: useRef(null),
   };
 
@@ -74,10 +74,10 @@ function App() {
       <div id="portfolio" ref={sectionRefs.portfolio}>
         <Portfolio />
       </div>
-      <div id="clients" ref={sectionRefs.clients}>
+      <div>
         <Price />
       </div>
-      <div id="contact" ref={sectionRefs.contact}>
+      <div id="client" ref={sectionRefs.client}>
         <Testimonials/>
       </div>
       <div id="contact" ref={sectionRefs.contact}>

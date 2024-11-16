@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import {
   FaCode,
   FaCamera,
@@ -41,12 +41,42 @@ export default function Services() {
       description: "Duis molestie enim mattis gravida viverra.",
     },
   ];
+
+  const serviceRefs = useRef([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    serviceRefs.current.forEach((ref) => {
+      if (ref) observer.observe(ref);
+    });
+
+    return () => {
+      serviceRefs.current.forEach((ref) => {
+        if (ref) observer.unobserve(ref);
+      });
+    };
+  }, []);
+
   return (
     <div className="container">
       <h1 className="title">My Services</h1>
       <div className="services-container">
         {services.map((service, index) => (
-          <div key={index} className="service-item">
+          <div
+            key={index}
+            className="service-item"
+            ref={(el) => (serviceRefs.current[index] = el)}
+          >
             <div className="icon">{service.icon}</div>
             <h3 className="titles">{service.title}</h3>
             <p className="description">{service.description}</p>
